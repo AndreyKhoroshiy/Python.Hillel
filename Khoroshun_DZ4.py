@@ -17,3 +17,11 @@ else:
     my_list.append(my_list[-1] + my_list[-2])
 print(my_list)
 ##########################################
+value = input("Введите число")
+try:
+    value = float(value)
+    new_value = value ** -1
+    print(new_value)
+except ValueError:
+    print("Не корректный ввод, Вы ввели не число")
+##########################################
