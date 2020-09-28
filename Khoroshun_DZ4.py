@@ -30,3 +30,9 @@ my_indexes = [0, 1, 2, 3, 4, 5, 6]
 for index in my_indexes:
     print(my_list[index])
 #########################################
+my_list1 = [10, 25, 50, 110, 135, 145, 98]
+my_list2 = [40, 56, 28, 123, 137, 159, 23]
+my_indexes = [0, 1, 2, 3, 4, 5, 6]
+for index in my_indexes:
+    print((my_list1[index], my_list2[index]))
+##########################################
