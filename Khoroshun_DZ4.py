@@ -20,8 +20,8 @@ print(my_list)
 value = input("Введите число")
 try:
     value = float(value)
-    new_value = value ** -1
-    print(new_value)
+    result = value ** -1
+    print(result)
 except ValueError:
     print("Не корректный ввод, Вы ввели не число")
 ##########################################
