@@ -36,3 +36,11 @@ my_indexes = [0, 1, 2, 3, 4, 5, 6]
 for index in my_indexes:
     print((my_list1[index], my_list2[index]))
 ##########################################
+my_string = '0123456789'
+my_list = []
+for symb_1 in my_string:
+    for symb_2 in my_string:
+        print(symb_1 + symb_2)
+        my_list.append(int(symb_1 + symb_2))
+print(my_list)
+###########################################
