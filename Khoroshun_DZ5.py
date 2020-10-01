@@ -28,3 +28,10 @@ for value in my_list_2:
         my_result.append(value)
 print(my_result)
 ########################################
+my_list = [1, 2, 3, 4]
+new_list = []
+new_list.extend(my_list)
+new_list.pop(0)
+new_list.append(my_list[0])
+print(new_list)
+########################################
