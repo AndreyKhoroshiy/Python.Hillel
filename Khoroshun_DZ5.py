@@ -40,3 +40,11 @@ my_list.append(my_list[0])
 my_list.pop(0)
 print(my_list)
 ########################################
+my_str = "43 больше чем 34 но меньше чем 56"
+new_list = my_str.split()
+my_list = []
+for symbol in new_list:
+    if symbol.isnumeric():
+        my_list.append(int(symbol))
+print(sum(my_list))
+#########################################
