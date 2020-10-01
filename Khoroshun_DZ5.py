@@ -17,3 +17,14 @@ for symbol in my_str:
         break
 print(len(my_list))
 ########################################
+my_list_1 = [1, 2, 3, 4, 5]
+my_list_2 = [10, 15, 20, 25]
+my_result = []
+for value in my_list_1:
+    if value % 2 == 0:
+        my_result.append(value)
+for value in my_list_2:
+    if value % 2 != 0:
+        my_result.append(value)
+print(my_result)
+########################################
