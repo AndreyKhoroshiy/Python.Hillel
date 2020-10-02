@@ -48,3 +48,10 @@ for symbol in new_list:
         my_list.append(int(symbol))
 print(sum(my_list))
 #########################################
+my_str = "abcde"
+my_list = []
+new_list = ["_"]
+if len(my_str) % 2 != 0:
+    my_str += "_"
+print([my_str[i:i + 2] for i in range(0, len(my_str), 2)])
+##########################################
