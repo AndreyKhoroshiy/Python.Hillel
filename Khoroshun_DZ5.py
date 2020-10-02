@@ -63,3 +63,11 @@ r_limit = my_str.index(r_limit)
 sub_str = (my_str[l_limit+1:r_limit])
 print(sub_str)
 ##########################################
+my_str = "My long string"
+l_limit = "o"
+r_limit = "g"
+l_limit = my_str.index(l_limit)
+r_limit = my_str.rindex(r_limit)
+sub_str = (my_str[l_limit+1:r_limit])
+print(sub_str)
+##########################################
