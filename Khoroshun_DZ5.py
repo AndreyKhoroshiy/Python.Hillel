@@ -71,3 +71,9 @@ r_limit = my_str.rindex(r_limit)
 sub_str = (my_str[l_limit+1:r_limit])
 print(sub_str)
 ##########################################
+my_list = [2, 4, 1, 5, 3, 9, 0, 7]
+new_list = []
+for i in range(1, len(my_list) - 1):
+    if my_list[i - 1] < my_list[i] > my_list[i + 1]:
+        new_list.append(i)
+print(len(new_list))
