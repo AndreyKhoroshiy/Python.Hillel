@@ -55,3 +55,11 @@ if len(my_str) % 2 != 0:
     my_str += "_"
 print([my_str[i:i + 2] for i in range(0, len(my_str), 2)])
 ##########################################
+my_str = "My_long str"
+l_limit = "o"
+r_limit = "t"
+l_limit = my_str.index(l_limit)
+r_limit = my_str.index(r_limit)
+sub_str = (my_str[l_limit+1:r_limit])
+print(sub_str)
+##########################################
