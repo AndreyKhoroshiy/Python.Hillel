@@ -1,4 +1,4 @@
-my_list = ["web", "srt", "ibm", "pto", "img", "wtf", "klw", "mto"]
+my_list = ['web', 'srt', 'ibm', 'pto', 'img', 'wtf', 'klw', 'mto']
 new_list = []
 for index, value in enumerate(my_list):
     if index % 2 != 0:
