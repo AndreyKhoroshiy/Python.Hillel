@@ -22,3 +22,10 @@ for string in my_list:
         new_list.append(string)
 print(new_list)
 #######################################################################
+my_list = [45, 'srt', 15, 'mao', 'ima', 84, 'klw', 'mta']
+new_list = []
+for value in my_list:
+    if type(value) == str:
+        new_list.append(value)
+print(new_list)
+#######################################################################
