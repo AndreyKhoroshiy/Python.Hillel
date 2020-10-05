@@ -10,8 +10,15 @@ print(new_list)
 ######################################################################
 my_list = ['web', 'art', 'ibm', 'ato', 'img', 'atf', 'klw', 'mto']
 new_list = []
-for value in my_list:
-    if value[0] == 'a':
-        new_list.append(value)
+for string in my_list:
+    if string[0] == 'a':
+        new_list.append(string)
 print(new_list)
 ######################################################################
+my_list = ['avp', 'srt', 'ibm', 'mao', 'ima', 'wtf', 'klw', 'mta']
+new_list = []
+for string in my_list:
+    if 'a' in string:
+        new_list.append(string)
+print(new_list)
+#######################################################################
