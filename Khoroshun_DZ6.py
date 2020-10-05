@@ -8,3 +8,10 @@ for index, value in enumerate(my_list):
         new_list.append(value)
 print(new_list)
 ######################################################################
+my_list = ['web', 'art', 'ibm', 'ato', 'img', 'atf', 'klw', 'mto']
+new_list = []
+for value in my_list:
+    if value[0] == 'a':
+        new_list.append(value)
+print(new_list)
+######################################################################
