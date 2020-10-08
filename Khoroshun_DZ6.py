@@ -42,3 +42,18 @@ sum_set = set1.intersection(set2)
 my_list = list(sum_set)
 print(my_list)
 #######################################################################
+my_str1 = 'Andrey'
+my_str2 = 'Khoroshun'
+list1 = []
+list2 = []
+for symbol in my_str1:
+    if my_str1.count(symbol) == 1:
+        list1.append(symbol)
+for symbol in my_str2:
+    if my_str2.count(symbol) == 1:
+        list2.append(symbol)
+my_set1 = set(list1)
+my_set2 = set(list2)
+new_list = list(my_set1.intersection(my_set2))
+print(new_list)
+#######################################################################
