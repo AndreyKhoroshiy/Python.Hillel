@@ -29,3 +29,8 @@ for value in my_list:
         new_list.append(value)
 print(new_list)
 #######################################################################
+my_str = 'Andrey Khoroshun'
+new_str = set(my_str)
+my_list = list(new_str)
+print(my_list)
+#######################################################################
