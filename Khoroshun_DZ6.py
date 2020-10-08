@@ -34,3 +34,11 @@ new_str = set(my_str)
 my_list = list(new_str)
 print(my_list)
 #######################################################################
+my_str1 = 'Andrey'
+my_str2 = 'Khoroshun'
+set1 = set(my_str1)
+set2 = set(my_str2)
+sum_set = set1.intersection(set2)
+my_list = list(sum_set)
+print(my_list)
+#######################################################################
