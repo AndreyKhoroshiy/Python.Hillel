@@ -8,3 +8,8 @@ triangle = dict(A=(random.randrange(200), random.randrange(200)),
                 C=(random.randrange(200), random.randrange(200)))
 print(triangle)
 #############################################################
+my_str = "I'm the string"
+def my_function(my_str):
+    print("***" + my_str + "***")
+my_function(my_str)
+#############################################################
