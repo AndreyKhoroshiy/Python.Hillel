@@ -21,3 +21,13 @@ my_set = my_set1.intersection(my_set2)
 my_list = list(my_set)
 print(my_list)
 ##############################################################
+my_dict_1 = dict(Возраст=33, Фамилия="Хорошун", Имя="Андрей", Отчество="Владимирович")
+my_dict_2 = dict(Фамилия="Хорошун", Имя="Андрей", Проживание="Днепр", Работа="Есть")
+my_list = []
+my_set1 = set(my_dict_1)
+my_set2 = set(my_dict_2)
+for i in my_set1:
+    if (i in my_set1) != (i in my_set2):
+        my_list.append(i)
+print(my_list)
+###############################################################
