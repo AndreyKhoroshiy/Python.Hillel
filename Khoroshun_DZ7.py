@@ -31,3 +31,11 @@ for i in my_set1:
         my_list.append(i)
 print(my_list)
 ###############################################################
+my_dict_1 = dict(Возраст=33, Фамилия="Хорошун", Имя="Андрей", Отчество="Владимирович")
+my_dict_2 = dict(Фамилия="Хорошун", Имя="Андрей", Проживание="Днепр", Работа="Есть")
+my_dict = {}
+for key, value in my_dict_1.items():
+    if (key in my_dict_1) != (key in my_dict_2):
+        my_dict.setdefault(key, value)
+print(my_dict)
+################################################################
