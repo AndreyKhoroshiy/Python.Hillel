@@ -1,13 +1,13 @@
-def domains():
+def get_domains():
     my_list_domains = []
     for i in open(r"C:\Users\Тарас\Python.Hillel\Homeworks\domains.txt", 'r'):
         my_list_domains.append(i[1:-1])
     return my_list_domains
 
 
-print(domains())
+print(get_domains())
 ##################################################################################
-def names():
+def get_names():
     my_list_names = []
     new_list = []
     for i in open(r"C:\Users\Тарас\Python.Hillel\Homeworks\names.txt", 'r'):
@@ -17,5 +17,5 @@ def names():
     return new_list
 
 
-print(names())
+print(get_names())
 ###################################################################################
