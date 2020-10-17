@@ -1,7 +1,7 @@
 import os
 
 
-def get_way(path=r"C:\Users\Тарас\Python.Hillel"):
+def get_way(path="./"):
     list_dir = os.listdir(path)
     dict_ff = {"files": [], "folders": []}
     for object in list_dir:
