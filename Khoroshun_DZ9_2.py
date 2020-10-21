@@ -105,9 +105,14 @@ names_list = name_formation()
 
 
 def creat_list_dict2():
-    for
+    combined_dict = {}
+    keys = names_list
+    values = finals_date_list
+    for k, v in zip(keys, values):
+        combined_dict[k] = v
+    print(combined_dict)
+    return combined_dict
 
-dict(zip(keys, values))
 #   names_list:
 # finals_date_list:
 
