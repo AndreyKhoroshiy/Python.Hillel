@@ -37,11 +37,11 @@ def reading_data():
 reading_data()
 
 
-final_list = reading_data()
+finals_list = reading_data()
 
 
 def replacements_of_the_month():
-    result_list1 = [elem.replace("January", "01") for elem in final_list]
+    result_list1 = [elem.replace("January", "01") for elem in finals_list]
     result_list2 = [elem.replace("February", "02") for elem in result_list1]
     result_list3 = [elem.replace("March", "03") for elem in result_list2]
     result_list4 = [elem.replace("April", "04") for elem in result_list3]
@@ -59,12 +59,12 @@ def replacements_of_the_month():
 
 replacements_of_the_month()
 
-result_list = replacements_of_the_month()
+results_list = replacements_of_the_month()
 
 
 def date_formation():
     date_list = []
-    for elem in result_list:
+    for elem in results_list:
         date_list.append(elem.split('-')[0].strip(' '))
     # print(date_list)
     date_list1 = [elem.replace("st", "") for elem in date_list]
@@ -78,7 +78,7 @@ def date_formation():
 
 date_formation()
 
-final_date_list = date_formation()
+finals_date_list = date_formation()
 
 
 def name_formation():
@@ -86,7 +86,7 @@ def name_formation():
     name_list2 = []
     name_list3 = []
     name_list = []
-    for elem in result_list:
+    for elem in results_list:
         name_list1.append(elem.split('-')[1].strip(' '))
     for elem in name_list1:
         name_list2.append(elem.split("'s")[0])
@@ -104,11 +104,23 @@ name_formation()
 names_list = name_formation()
 
 
-def creat_list_dict():
-    list_dict = [dict(name=name, date=date) for name, date in zip(names_list, final_date_list)]
-    print(list_dict)
+def creat_list_dict2():
+    for
+
+dict(zip(keys, values))
+#   names_list:
+# finals_date_list:
+
+
+
+lists_dict2 = creat_list_dict2()
+
+
+def creat_list_dict3():
+    list_dict = [dict(name=name, date=date) for name, date in zip(names_list, finals_date_list)]
+    # print(list_dict)
     return list_dict
 
 
-list_ = creat_list_dict()
+lists_dict3 = creat_list_dict3()
 
