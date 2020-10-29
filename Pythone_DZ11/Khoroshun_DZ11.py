@@ -4,7 +4,7 @@ import json
 def reading_file():
     with open('data.json', 'r', encoding='utf-8') as json_file:
         data = json.load(json_file)
-        print(data, type(data))
+        # print(data, type(data))
     return data
 
 
