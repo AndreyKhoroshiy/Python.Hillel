@@ -1,5 +1,4 @@
 import requests
-# import json
 import csv
 
 
@@ -22,13 +21,14 @@ while i <= 19:
     if (get_response.json()['quoteAuthor'] != '') and (get_response.json() not in collection_of_quote):
         collection_of_quote.append(get_response.json())
         i += 1
-print(collection_of_quote)
-print(len(collection_of_quote))
+# print(collection_of_quote)
+# print(len(collection_of_quote))
 
 
 def sort_name_author(tmp_dict):
-    name = tmp_dict['quoteAuthor'].strip().split(" ")[-1]
-    print(name)
+    name_temp = tmp_dict['quoteAuthor'].strip()
+    name = name_temp.split(" ")[-1]
+    # print(name)
     return name
 
 
@@ -39,26 +39,26 @@ for item in collection_of_quote:
 
 
 sort_collection_of_quotes = sorted(sort_collection_of_quote, key=sort_name_author)
-print(sort_collection_of_quotes)
+# print(sort_collection_of_quotes)
 
 
 final_quote_list = []
-for i in sort_collection_of_quote:
+for i in sort_collection_of_quotes:
     i['Цитата'] = i.pop('quoteText')
     i['Автор'] = i.pop('quoteAuthor')
     i['Ссылка'] = i.pop('quoteLink')
     i = {'Автор': i['Автор'], 'Цитата': i['Цитата'], 'Ссылка': i['Ссылка']}
     final_quote_list.append(i)
-print(final_quote_list)
+# print(final_quote_list)
 
 
 def write_csv(data, filename_with_path):
     names = list(data[0].keys())
-    with open(filename_with_path, 'wb') as output_file:
-        csv_writer = csv.DictWriter(output_file, names)
+    with open(filename_with_path, 'w') as output_file:
+        csv_writer = csv.DictWriter(output_file, fieldnames=names, delimiter=';')
         csv_writer.writeheader()
         csv_writer.writerows(data)
 
 
-csv_writers = write_csv(final_quote_list, 'quotes.csv')
+csv_writers = write_csv(final_quote_list, 'quote.csv')
 
