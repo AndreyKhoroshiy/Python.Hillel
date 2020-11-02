@@ -53,7 +53,7 @@ for i in sort_collection_of_quotes:
 
 
 def write_csv(data, filename_with_path):
-    names = list(data[0].keys())
+    names = data[0].keys()
     with open(filename_with_path, 'w') as output_file:
         csv_writer = csv.DictWriter(output_file, fieldnames=names, delimiter=';')
         csv_writer.writeheader()
