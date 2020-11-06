@@ -29,3 +29,17 @@ class Unit:
         self.intellect = random.randrange(1, 101)
         print(self.intellect)
         return self.intellect
+
+    def _recovery(self):
+        if self.health <= 90:
+            self.health += 10
+        else:
+            self.health = 100
+        print(self.health)
+        return self.health
+
+
+class Mage(Unit):
+    def __init__(self, name, clan, type_magic):
+        super().__init__(name, clan)
+
