@@ -42,4 +42,20 @@ class Unit:
 class Mage(Unit):
     def __init__(self, name, clan, type_magic):
         super().__init__(name, clan)
+        self.type_magic = type_magic
+        self.health = self._health()
+        self.strenght = self._strength()
+        self.agility = self._agility()
+        self.intellect = self._intellect()
 
+    def recuperation_intellect(self):
+        if self.intellect <= 9:
+            self.intellect += 1
+        else:
+            self.intellect = 10
+        print(self.intellect)
+        return self.intellect
+
+
+Unit_mage = Mage("Дамблдор", "Человек", "Воздух")
+print(f'{Unit_mage.name} из клана {Unit_mage.clan}, дополнительная характеристика {Unit_mage.type_magic}. Здоровье : {Unit_mage.health}, сила: {Unit_mage.strenght}, ловкость: {Unit_mage.agility}, интеллект: {Unit_mage.intellect}.')
