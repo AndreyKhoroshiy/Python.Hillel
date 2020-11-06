@@ -6,7 +6,7 @@ class Unit:
         self.name = name
         self.clan = clan
         self.health = _health
-        self.strenght = _strength
+        self.strength = _strength
         self.agility = _agility
         self.intellect = _intellect
 
@@ -16,9 +16,9 @@ class Unit:
         return self.health
 
     def _strength(self):
-        self.strenght = random.randrange(1, 101)
-        print(self.strenght)
-        return self.strenght
+        self.strength = random.randrange(1, 101)
+        print(self.strength)
+        return self.strength
 
     def _agility(self):
         self.agility = random.randrange(1, 101)
@@ -30,7 +30,7 @@ class Unit:
         print(self.intellect)
         return self.intellect
 
-    def _recovery(self):
+    def _recovery_health(self):
         if self.health <= 90:
             self.health += 10
         else:
@@ -44,7 +44,7 @@ class Mage(Unit):
         super().__init__(name, clan)
         self.type_magic = type_magic
         self.health = self._health()
-        self.strenght = self._strength()
+        self.strength = self._strength()
         self.agility = self._agility()
         self.intellect = self._intellect()
 
@@ -57,5 +57,5 @@ class Mage(Unit):
         return self.intellect
 
 
-Unit_mage = Mage("Дамблдор", "Человек", "Воздух")
-print(f'{Unit_mage.name} из клана {Unit_mage.clan}, дополнительная характеристика {Unit_mage.type_magic}. Здоровье : {Unit_mage.health}, сила: {Unit_mage.strenght}, ловкость: {Unit_mage.agility}, интеллект: {Unit_mage.intellect}.')
+Unit_mage = Mage("Дамблдор", "Люди", "Воздух")
+print(f'{Unit_mage.name} клан {Unit_mage.clan}, дополнительная характеристика {Unit_mage.type_magic}. Здоровье : {Unit_mage.health}, сила: {Unit_mage.strength}, ловкость: {Unit_mage.agility}, интеллект: {Unit_mage.intellect}.')
