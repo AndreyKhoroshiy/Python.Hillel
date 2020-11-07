@@ -50,9 +50,8 @@ class Mage(Unit):
             self.intellect = 10
         return self.intellect
 
-
-Unit_mage = Mage("Дамблдор", "Люди", "Воздух")
-print(f'{Unit_mage.name} клан {Unit_mage.clan}, дополнительная характеристика {Unit_mage.type_magic}. Здоровье : {Unit_mage.health}, сила: {Unit_mage.strength}, ловкость: {Unit_mage.agility}, интеллект: {Unit_mage.intellect}.')
+    def __repr__(self):
+        return f'{self.name} клан {self.clan}, дополнительная характеристика {self.type_magic}. Здоровье : {self.health}, сила: {self.strength}, ловкость: {self.agility}, интеллект: {self.intellect}.'
 
 
 class Archer(Unit):
@@ -71,9 +70,8 @@ class Archer(Unit):
             self.agility = 10
         return self.agility
 
-
-Unit_archer = Archer("Леголас", "Эльф", "Лук")
-print(f'{Unit_archer.name} клан {Unit_archer.clan}, дополнительная характеристика {Unit_archer.type_bow}. Здоровье : {Unit_archer.health}, сила: {Unit_archer.strength}, ловкость: {Unit_archer.agility}, интеллект: {Unit_archer.intellect}.')
+    def __repr__(self):
+        return f'{self.name} клан {self.clan}, дополнительная характеристика {self.type_bow}. Здоровье : {self.health}, сила: {self.strength}, ловкость: {self.agility}, интеллект: {self.intellect}.'
 
 
 class Knight(Unit):
@@ -93,6 +91,14 @@ class Knight(Unit):
             self.strength = 10
         return self.strength
 
+    def __repr__(self):
+        return f'{self.name} клан {self.clan}, дополнительная характеристика {self.type_weapon}. Здоровье : {self.health}, сила: {self.strength}, ловкость: {self.agility}, интеллект: {self.intellect}.'
 
+
+Unit_mage = Mage("Дамблдор", "Люди", "Воздух")
+Unit_archer = Archer("Леголас", "Эльф", "Лук")
 Unit_Knight = Knight("Ланцелот", "Человек", "Меч")
-print(f'{Unit_Knight.name} клан {Unit_Knight.clan}, дополнительная характеристика {Unit_Knight.type_weapon}. Здоровье : {Unit_Knight.health}, сила: {Unit_Knight.strength}, ловкость: {Unit_Knight.agility}, интеллект: {Unit_Knight.intellect}.')
+
+print(Unit_mage)
+print(Unit_archer)
+print(Unit_Knight)
