@@ -17,4 +17,10 @@ def create_random_triangle():
     return tuple(coordinat)
 
 
+coordinats = create_random_triangle()
 create_random_triangle()
+
+
+def create_right_triangle(vert:tuple):
+
+
