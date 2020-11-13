@@ -32,7 +32,7 @@ def create_right_triangle(vert: tuple, square=100):
     return tuple(coordinat_triangle)
 
 
-my_coordinats = create_right_triangle((3, 5))
+my_coordinat = create_right_triangle((3, 5))
 
 
 def triangle_square():
@@ -50,3 +50,4 @@ def triangle_square():
 
 
 triangle_square()
+
